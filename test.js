@@ -1,15 +1,15 @@
 var a=[3,44,38,5,47,15,36,26,27,2,46];
-function Sort(e) {
+function Fragmentation(e) {
    if(e.length <= 1) {
       return e;}
       else {
       var middle = Math.floor(0.5*e.length);// 5
       var left = e.slice(0,middle);// 3,44,38,5,47
       var right = e.slice(middle,e.length);// 15,36,26,27,2,46
-      return Q(Sort(left),Sort(right));
+      return Sort(Fragmentation(left),Fragmentation(right));
    }
 }
- function Q(L,R) {
+ function Sort(L,R) {
         var result = [];
         var i = 0, j = 0;
         while(i < L.length && j < R.length) {
@@ -30,4 +30,4 @@ function Sort(e) {
       } 
       return result;
     }
-    console.log(Sort(a)); 
+    console.log(Fragmentation(a)); 
