@@ -1,0 +1,40 @@
+#nav ul {
+    width: 1000px;
+    height: 40px;
+    margin: 30px auto;
+    padding: 10px;
+    list-style: none;
+    border-top: solid 5px #000;
+    border-bottom: solid 5px #000;
+   
+  }
+#nav ul li {
+  float: left;
+  text-align: center;
+  font: 16px/2.5 ;
+}
+#nav ul li a{
+  
+  text-decoration: none;color: aqua;
+}
+#nav ul li a:hover{
+  display: block;color: blue;background: blueviolet;
+}
+  div2{
+    position:absolute;
+    left:500px;
+    top:0px;
+}
+div3{
+  position:absolute;
+  left:500px;
+  top:200px;
+}
+div5{
+  position: relative;
+    left:650px;
+   top:50px;
+}
+span{
+  color:rgb(139, 0, 116);
+}

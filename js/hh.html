@@ -3,88 +3,51 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Pixabay</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <style type="text/css">a {text-decoration:none;}
-    div1{
-        position:absolute;
-        left:10px;
-        top:50px;
-    }
-    div2{
-        position:absolute;
-        left:800px;
-        top:20px;
-    }
-    div3{
-        position:absolute;
-        left:500px;
-        top:200px;
-    }
-    div5{
-        position:absolute;
-        left:120px;
-        top:10px;
-    }
-    div6{
-        position:absolute;
-        left:200px;
-        top:1px;
-    }
-    div7{
-        position:absolute;
-        left:50px;
-        top:1px;
-    }
-    div8{
-        position:absolute;
-        left:50px;
-        top:1px;
-    }
-    span1{
-        color: #000;
-    }
-    span{
-        color:rgb(139, 0, 116);
+    body{
+    background-image:url('777.jpg');
+        background-position: center;
+        background-size: cover;
+      background-repeat: repeat-y;}
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start ;
+        flex-basis: 60px;
+        margin: 100px;
     }
     </style>
   </head>
 <body>
-    <div>
-        <img src="777.jpg"
-        width="1350"
-        height="600">
+    <div id="nav">
+        <ul>
+            <div class="box" style="color: rgb(0, 56, 139);font-size: 30px;">
+        小杜饲养手册 
+            <li><p style="font-size: 15px;width: 100px;">
+                <a href="#"><span>讨厌的东西</span></a>.
+                    </p></a></li>
+            <li><p style="font-size: 15px;width: 100px;">
+        <a href="#"><span>哄睡大法</span></a>.
+            </p></a></li>
+            <li><p style="font-size: 15px;width: 100px;">
+                <a href="#"><span>杜杜喜欢</span></a>.
+                    </p></a></li>
+        </ul>
+      </div>
+    </div>
         <div3 id="div3">
             <form style="font-size:20px;">
-                    <h1>丁丁搜索，懂你所想</h1>
-                    <h4>这是一个神奇的网站，可以直接看到你灵魂深处</h4>
+                    <h1 style="text-align:center;"> 小杜搜索，懂你所想</h1>
+                    <h4 style="text-align: center;">这是一个神奇的网站，可以直接看到你灵魂深处</h4>
                     <form  method="post" action="save.php">
                         <input type="text" style="width: 70%;height: 50px;"  value="输入你想知道的问题吧" name="myName " />
-                        <input type="submit" style="width: 40px;height: 40px;" value=" ❤ " name="submitBtn" />
+                        <input type="submit" style=" width: 40px;height: 40px; border: hotpink double;" value=" ❤ " name="submitBtn" />
                     </form>
             </form>
         </div>
-    <div1 id="div1"> 
-         <p style="font-size: 30px;font-style:italic;">
-            <a href="#"><span1>丁丁的世界</span1></a>.
-        </p>
-    </div>
-   
-    <div6 id="div6"> 
-        <p style="font-size: 15px;">
-           <a href="#"><span>丁丁饲养手册</span></a>.
-       </p>
-   </div>
-   <div7 id="div7"> 
-    <p style="font-size: 15px;">
-       <a href="#"><span>哄丁丁大法</span></a>.
-   </p>
-</div>
-<div8 id="div8"> 
-    <p style="font-size: 15px;">
-       <a href="#"><span>丁丁喜欢的东西</span></a>.
-   </p>
-</div>
-
-    <div2 id="div2">
+        
+    <div2>
         <form action="save.php" method="post" style="font-size: 30px;">
             <select>
               <option value="爱丁丁">爱丁丁</option>
@@ -92,11 +55,11 @@
               <option value="给她买零食">给她买零食</option>
             </select>
           </form>
-    </div>
+    </div2>
     <div5 id="div5"> 
         <form  method="post" action="save.php">
-            <input type="submit" value="注册" name="submitBtn" />
-            <input type="submit" value="登录" name="submitBtn" />
+            <input type="button" value="注册" name="submitBtn" style="border: hotpink double;"/>
+            <input type="submit" value="登录" name="submitBtn" style="border: hotpink double;" />
           </form>
    </div>
 </div>
