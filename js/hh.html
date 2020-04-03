@@ -5,64 +5,39 @@
     <title>Pixabay</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <style type="text/css">a {text-decoration:none;}
-    body{
-    background-image:url('777.jpg');
-        background-position: center;
-        background-size: cover;
-      background-repeat: repeat-y;}
-    .box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start ;
-        flex-basis: 60px;
-        margin: 100px;
-    }
     </style>
   </head>
 <body>
-    <div id="nav">
-        <ul>
-            <div class="box" style="color: rgb(0, 56, 139);font-size: 30px;">
-        小杜饲养手册 
-            <li><p style="font-size: 15px;width: 100px;">
-                <a href="#"><span>讨厌的东西</span></a>.
-                    </p></a></li>
-            <li><p style="font-size: 15px;width: 100px;">
-        <a href="#"><span>哄睡大法</span></a>.
-            </p></a></li>
-            <li><p style="font-size: 15px;width: 100px;">
-                <a href="#"><span>杜杜喜欢</span></a>.
-                    </p></a></li>
-        </ul>
-      </div>
-    </div>
-        <div3 id="div3">
-            <form style="font-size:20px;">
-                    <h1 style="text-align:center;"> 小杜搜索，懂你所想</h1>
-                    <h4 style="text-align: center;">这是一个神奇的网站，可以直接看到你灵魂深处</h4>
-                    <form  method="post" action="save.php">
-                        <input type="text" style="width: 70%;height: 50px;"  value="输入你想知道的问题吧" name="myName " />
-                        <input type="submit" style=" width: 40px;height: 40px; border: hotpink double;" value=" ❤ " name="submitBtn" />
+     <div class="nav">
+         <div class="box">
+                <div class="logo">丁丁饲养手册 </div>
+                <p><a href="#"><span>讨厌的东西</span></a></p>
+                <p><a href="#"><span>哄睡大法</span></a></p>
+                <p><a href="#"><span>丁丁喜欢</span></a></p>
+                <div class="type1"><form action="save.php" method="post" style="font-size: 30px;">
+                   <select>
+                    <option value="爱丁丁">爱丁丁</option>
+                    <option value="宠丁丁" selected="selected">宠丁丁</option>
+                    <option value="给她买零食">给她买零食</option>
+                  </select>
+                   </from></div>
+                 <div class="type2"><form  method="post" action="save.php">
+                    <input type="button" value="注册" name="submitBtn" style="width: 60px;height: 40px;border: hotpink double;"/>
+                    <input type="submit" value="登录" name="submitBtn" style="width: 60px;height: 40px;border: hotpink double;" />
                     </form>
+                 </div>
+         </div>
+     </div>
+        <div3 class="div3">
+            <form style="font-size:20px;">
+                    <h1 style="text-align:center;"> 丁丁搜索，懂你所想</h1>
+                    <h4 style="text-align: center;">这是一个神奇的网站，可以直接看到你灵魂深处</h4>
+                    <div style="text-align: center;width: 100%;height: 50px;" method="post" action="save.php">
+                        <input type="text" style="text-align: center; width: 30%;height: 50px;"  value="输入你想知道的问题吧" name="myName " />
+                        <input type="submit" style=" width: 40px;height: 40px; border: hotpink double;" value=" ❤ " name="submitBtn" />
+                    </div>
             </form>
-        </div>
-        
-    <div2>
-        <form action="save.php" method="post" style="font-size: 30px;">
-            <select>
-              <option value="爱丁丁">爱丁丁</option>
-              <option value="宠丁丁" selected="selected">宠丁丁</option> // selected="selected"则该选项就被默认选中.
-              <option value="给她买零食">给她买零食</option>
-            </select>
-          </form>
-    </div2>
-    <div5 id="div5"> 
-        <form  method="post" action="save.php">
-            <input type="button" value="注册" name="submitBtn" style="border: hotpink double;"/>
-            <input type="submit" value="登录" name="submitBtn" style="border: hotpink double;" />
-          </form>
-   </div>
-</div>
+        </div> 
 </body>
 </html>
 
