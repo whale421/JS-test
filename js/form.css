@@ -1,5 +1,32 @@
 body{
-    background-image:url('857.jpg');
+    background-image:url('69.jpg');
         background-position:left;
         background-size: cover;
       background-repeat: repeat-y;}
+      .navigation {
+          top: 30px;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-evenly;
+          flex-basis: 20px;
+          margin: 50px auto;
+          padding: 0px;
+          list-style: decimal-leading-zero;
+          border-top: groove 5px violet;
+          border-bottom: solid 5px chartreuse;
+          width: 1200px;
+          height:50px;
+          background: url('777.jpg');
+      }
+      .type{
+        position: relative;
+        right: -1100px;
+        top:5px;
+      }
+      a {
+        color: rgb(195, 0, 255);
+        style="font-size: 20px;
+        width: 100px;
+        margin: 15px;
+        padding: 15px;
+      }
