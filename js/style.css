@@ -1,0 +1,22 @@
+.main,.left,.right{
+    height: 100px;
+    float: left;
+}
+.main{
+    width: 100%;
+    background-color: aqua;
+}
+.left{
+    width:120px;
+    margin-left: -100%;
+    background-color:rgb(237, 212, 100);
+}
+.right{
+    width: 120px;
+    margin-left: -120px;
+    background-color: cadetblue;
+}
+.inner{
+    margin-left:120px;
+    margin-right: 120px;
+}
